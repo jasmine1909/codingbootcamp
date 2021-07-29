@@ -1,0 +1,257 @@
+/* Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/*
+font-family: 'Bowlby One SC', cursive;
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.header-main {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./project/pexels-photo-3183197.jpeg) center/cover no-repeat;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.header-top-content {
+  padding-top: 4rem;
+}
+
+.header-top-content h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 1000;
+  animation: glowingText;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glowingText {
+  0% {
+    text-shadow: 3px 2px 5px grey;
+  }
+
+  50% {
+    text-shadow: 3px 2px 5px #fff;
+  }
+
+  100% {
+    text-shadow: 3px 2px 5px grey;
+  }
+}
+.header-top-content,
+.header-top-content p,
+.subscribe-form {
+  text-align: center;
+  margin: 0 auto;
+}
+.subscribe-form {
+  margin-top: 2rem;
+}
+.subscribe-form input[type="text"],
+input[type="email"] {
+  font-size: 1.6rem;
+  padding: 0.7rem 1rem;
+  width: 50vw;
+}
+.subscribe-form input[type="submit"] {
+  font-size: 1.6rem;
+  color: white;
+  background-color: red;
+  padding: 0.7rem 1rem;
+  width: 50vw;
+}
+.social-icons {
+  text-align: center;
+}
+.social-icons a {
+  display: inline-block;
+  font-size: 2rem;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 20px 10px;
+  text-align: center;
+
+  line-height: 60px;
+}
+.social-icons .fa-youtube {
+  color: red;
+}
+.social-icons .fa-facebook {
+  color: rgb(61, 114, 211);
+}
+.social-icons .fa-twitter {
+  color: blue;
+}
+.social-icons .fa-instagram {
+  color: rgb(252, 109, 133);
+}
+.social-icons .fa-pinterest {
+  color: red;
+}
+.social-icons a .fa,
+.fab {
+  transition: 0.5s;
+}
+.social-icons a:hover .fa {
+  transform: rotateY(360deg);
+}
+.social-icons a:hover .fab {
+  transform: rotateY(360deg);
+}
+.header-top-content p {
+  width: 80%;
+  text-align: center;
+}
+.header-btn button {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: darkblue;
+  margin-top: 2rem;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+/*video*/
+.bg-video-container {
+  position: relative;
+}
+.bg-video-container video {
+  width: 100%;
+  display: block;
+}
+.bg-content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80vw;
+  padding-left: 2rem;
+  font-size: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+}
+.bg-content h3 {
+  font-size: 1.8rem;
+
+  margin-top: 30px;
+}
+.navbar-nav {
+  text-align: right;
+}
+.navbar-nav ul li {
+  display: inline-block;
+}
+.navbar-nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: black;
+  padding: 15px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.brand {
+  padding-left: 0.3rem;
+}
+.brand h2 {
+  animation: brand;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+@keyframes brand {
+  0% {
+    color: red;
+  }
+  60% {
+    color: blue;
+  }
+  100% {
+    color: pink;
+  }
+}
+/*recent video*/
+.recent-video {
+  padding: 5rem;
+}
+
+.projects {
+  padding: 5rem;
+}
+.recent-video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recent-item {
+  padding: 2rem;
+}
+/*project*/
+.projects-wrapper {
+  background: url("/header_images/bg.jpg");
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+}
+.project-container img {
+  width: 100px;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background-color: lightblue;
+  padding: 1rem;
+}
+footer {
+  background-color: rgb(39, 46, 46);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 4rem 0;
+}
+footer p {
+  padding-top: 2rem;
+}
+
+.recent-video-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
